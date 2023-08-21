@@ -3,3 +3,6 @@ openai
 backoff
 tiktoken
 python-dotenv
+scipy
+termcolor
+requests
