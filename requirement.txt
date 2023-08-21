@@ -1,0 +1,5 @@
+tenacity
+openai
+backoff
+tiktoken
+python-dotenv
