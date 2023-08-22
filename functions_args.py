@@ -167,12 +167,15 @@ messages.append(response_message)
 input_message = {"role": "user", "content": "I'm in New Delhi"}
 messages.append(input_message)
 message_response = call_chat_completion(messages, 100, functions=functions_spec)
-print(message_response.get("function_call"))
+print(message_response)
+print(message_response.get("function_call").get("name"))
 messages.append(message_response)
 # pretty_print_conversation(messages)
 
-function_args = json.loads(message_response.function_call.arguments)
-print(function_args)
+function_args_json = json.loads(
+    message_response.function_call.arguments
+)  # a dictionary
+
 
 """
 model can generate function arguments 
