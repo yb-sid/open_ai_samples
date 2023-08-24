@@ -11,7 +11,7 @@ database_info_text = "\n".join(
     ]
 )
 
-# print(database_info_text)  # 280 tokens
+print(database_info_text)  # 280 tokens
 
 functions_array = [
     {
@@ -34,6 +34,8 @@ functions_array = [
         },
     }
 ]
+
+# print(functions_array)
 
 import openai
 from openai.error import OpenAIError

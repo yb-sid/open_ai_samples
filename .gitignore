@@ -1,3 +1,4 @@
 .vscode
 openaivenv
 .env
+__pycache__/
