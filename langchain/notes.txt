@@ -1,0 +1,21 @@
+langchain - framework for llm applications
+
+Components:
+- LLM - two types of language models
+- LLMs - language model , string is input , string is output 
+- ChatModels - list of messages as input , output is a message
+
+input = list[ChatMessage] 
+output = ChatMessage 
+
+Lanchain exposes objects for each role:
+HumanMessage (user)
+AIMessage (assistant)
+SystemMessage (system)
+FunctionMessage (functions)
+
+Calling_models : predict(completion) , predict_messages (ChatCompletion)
+
+=============
+
+
