@@ -17,5 +17,40 @@ FunctionMessage (functions)
 Calling_models : predict(completion) , predict_messages (ChatCompletion)
 
 =============
+Langchain provides objects for different roles
+
+- HumanMessage
+- AIMessage
+- SystemMessage
+- FunctionMessage
+
+==============
+Prompt Template - 
+- add user input to a larger piece of text 
+
+use : from langchain.prompts import PromptTemplate
+
+
+there are different kinds of templates for each roles:
+from langchain.prompts.chat import (
+    ChatPromptTemplate,
+    SystemMessagePromptTemplate,
+    HumanMessagePromptTemplate,
+)
+
+==============
+Output parser 
+- define a class using BaseOutputParser, to parse model's output 
+
+===============
+
+Model I/O 
+- Prompts - input by users to guide model's response 
+
+- prompt_tempalates:
+- replace texts in string/chat templates using langchain's objects 
+- custom_templates - certain cases , different templating is required 
+
+
 
 
