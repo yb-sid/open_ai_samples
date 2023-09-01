@@ -79,8 +79,9 @@ response = chat_model.predict_messages(messages)
 
 print(response)
 ######
-# not parse the str to a json structure
+# can't parse the str to a json structure
 
+# define json keys
 gift_schema = ResponseSchema(
     name="gift",
     description="was the item purchased as a gift for someone else?Answer True if yes , else False",
@@ -95,11 +96,12 @@ price_value_schema = ResponseSchema(
     name="price_value",
     description="Extract any sentences about price or value. Output them as a python list",
 )
-
+# combine keys into one structure
 response_schema = [gift_schema, delivery_days_schema, price_value_schema]
 
 output_parser = StructuredOutputParser.from_response_schemas(response_schema)
 
+# get langchain instructions
 format_instructions = output_parser.get_format_instructions()
 
 print(format_instructions)

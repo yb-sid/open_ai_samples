@@ -6,3 +6,4 @@ python-dotenv
 scipy
 termcolor
 requests
+langchain[all]
