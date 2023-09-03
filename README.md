@@ -15,5 +15,10 @@ Example :  https://platform.openai.com/docs/guides/gpt/function-calling
     - A `Chain` in langchain are combination of LLM+prompts , and they can be combined to form a flow of conversation.
 
 
+- CADTH : https://www.cadth.ca/reimbursement-review-reports
+
+    - Use LLM and Langchain to analyse evidence of reimbursement reports.
+
+
 
 
