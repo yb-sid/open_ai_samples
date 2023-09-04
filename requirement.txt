@@ -12,3 +12,4 @@ sqlalchemy
 wikipedia
 yt_dlp
 pydub
+chromadb
